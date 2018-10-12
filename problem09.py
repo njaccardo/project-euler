@@ -41,34 +41,3 @@ while True:
 		break
 
 print(ii*j*c)
-
-# i = 1
-# while True:
-# # for i in range(1,1001):
-
-# 	# for j in range(1,1001):
-# 	moveon = False
-# 	j = 1
-# 	while moveon is False:
-# 		c = (i**2+j**2)**0.5
-# 		if c > 1000 or j > 1000:
-# 			# moveon=True
-# 			# pdb.set_trace()
-# 			print('here')
-# 			break
-
-# 		print(i,j)
-# 		if i + j + c != 1000:
-# 			j +=1
-# 			# print(j)
-# 			continue
-# 		else:
-# 			print('Found it!')
-# 			break
-
-# 		# pdb.set_trace()
-# 	i +=1
-# 	if i > 1000:
-# 		pdb.set_trace()
-# 		break
-# print(i, j, c)
