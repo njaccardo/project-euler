@@ -16,7 +16,7 @@
 # What is the value of the first triangle number to have over five hundred divisors?
 
 import pdb
-
+import math
 count = 1
 val0 = 1
 tri = 0
@@ -29,18 +29,24 @@ while True:
 	count = 0
 	n = tri
 	# print(tri)
-	print(tri)
+	# print(tri)
 	div = []
-	for i in range(1,n+1):
+	for i in range(1,int(n**0.5+1)):
 		if n % i == 0:
-			div.append(i)
-			count += 1
-			n = n/i
-	print(div)
+			if n/i == i:
+				div.append(i)
+				count+=1
+			else:
+				div.append(i)
+				div.append(n/i)
+				count+=2
+	# print('>>' + str(count))
+	# print(div)
 	# print('divisors = '+str(count))
 
 	val0 += 1
-	if val0 > 10:
+	if count > 500:
+		print(tri)
 		break
 
 
